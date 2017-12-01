@@ -26,7 +26,7 @@ var obj = {
 }
 
 for(var key in obj){
-    key === x / y / z
+    key === x / y / z   
 }
 
 ```

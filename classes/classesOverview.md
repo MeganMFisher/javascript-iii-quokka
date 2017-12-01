@@ -25,3 +25,6 @@ Functions are defined on the template and then shared between every copy.
 They are created as siblings to the constructor at the top level.
 
 They must use the `this` keyword to access the object the function was invoked from.
+
+
+Prototypes. 

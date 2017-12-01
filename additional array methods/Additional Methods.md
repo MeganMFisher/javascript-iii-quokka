@@ -4,7 +4,7 @@
 ### indexOf
 
 #### Gets the index of a given item
-`array.indexOf(7)` -> Returns the index of the first time it found 7
+`array.indexOf(7)` -> Returns the index of the first time it found 7 in the array
 #### Works with strings, numbers, booleans
 `array.indexOf(22)`
 
@@ -16,6 +16,11 @@
 #### can start later
 `array.indexOf(10, 3)` -> Returns the index of 10, but only starts looking at index 3.
 
+
+
+
+
+
 ### split
 
 #### breaks a string based on a character
@@ -25,7 +30,7 @@
 `str.split(',')`
 
 #### returns an array with each chunk as a new item
-`var splitArr = "hello, my, name, is, Jeremy".split(',')`
+`var splitArr = "hello, my, name, is, Jeremy".split(',')` <== will delete whatever is put inbetween the quotes
 
 `splitArr === ["hello", " my", " name", " is", " Jeremy"]`
 
@@ -34,6 +39,12 @@
 A higher order function is a like a mastermind with smaller functions that act as minions or workers.
 
 A higher order function gets and uses other functions to perform *parts*.
+
+
+
+
+
+
 
 ### forEach
 
@@ -58,6 +69,11 @@ A higher order function gets and uses other functions to perform *parts*.
 `array.forEach( function( item, index, arr) { arr[index] = 7 } )`
 
 `array.forEach( ( item, index, arr) => arr[index] = 7 )`
+
+
+
+
+
 
 
 ### map
@@ -96,6 +112,12 @@ array.map( function(item){
 
 `array === [1, 2, 4, 10]`
 
+Have to return so it knows what to put into the new array.
+
+
+
+
+
 ### filter
 
 ##### works just like a forEach function
@@ -123,6 +145,12 @@ array.map( function(item){
 `filterResult === [ 2, 4, 10]`
 
 `array === [1, 2, 4, 10, 11]`
+
+
+
+
+
+
 
 ### reduce
 
@@ -154,3 +182,5 @@ array.map( function(item){
 `reduceResult === 28` 
 
 `array === [1, 2, 4, 10, 11]`
+
+previous is referring to the result of the previous loop. 

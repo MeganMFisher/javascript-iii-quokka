@@ -3,6 +3,14 @@ var answers = ["yes", "no", "yes", "no", "no", "no"]
 //map over answers
 //change yes into no and no into yes
 
+var opposites = answers.map(answer => {
+    if(answer === 'yes') {
+        return 'no'
+    }
+    return 'yes'
+})
+opposites;
+
 //DESIRED RESULT = ["no", "yes", "no", "yes", "yes", "yes"]
 
 
@@ -17,6 +25,16 @@ var employees = [
 //split on the - in name and turn name into first_name and last_name
 //save it to a new array variable
 
+var increase = employees.map(employee => {
+    return {
+        first_name: employee.name.split('-')[0],
+        last_name: employee.name.split('-')[1],
+        pay: employee.pay + 3
+    } 
+
+})
+
+increase;
 
 
 

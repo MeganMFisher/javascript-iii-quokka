@@ -30,3 +30,8 @@ var athletes = [
 //Filter OUT all athletes with wits 5 or higher
 //Filter IN all athletes with a strength higher than 6
 //Filter OUT all althletes that don't have Guy in their name
+
+var total = athletes.filter(e => {
+    return e.wits > 5
+})
+total;
